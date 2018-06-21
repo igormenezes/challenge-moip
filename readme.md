@@ -28,20 +28,20 @@ Documentação API (Enviar dados de pagamento):
 - Url: http://localhost:8000/api/save
 - Método: POST
 - Campos para envio:
-	 client_id = (hash/ID do cliente que está utilizando a API, ex: '348298791817d5088a6de6'),
-    'type' = (Tipo do pagamento aceito, campos aceitos são: 'credit card' ou 'boleto')
-    'name' => (nome do comprador)
-    'cpf' => (CPF do comprador)
-    'email' => (E-mail do comprador)
-    'amount' => (Valor da compra, enviar sem pontos e vírgulas, ex: '150000')
-    'card_user' => (Nome do dono do cartão),
-    'card_number' => (Número do cartão, enviar no seguinte formato: '4514 1671 3283 6410')
-    'card_expiration_date' => (Data de validade mm/aaaa, ex: '12/2018')
-    'card_cvv' => (Senha do cartão)
+   * 'client_id' = (hash/ID do cliente que está utilizando a API, ex: '348298791817d5088a6de6')
+   * 'type' = (Tipo do pagamento aceito, campos aceitos são: 'credit card' ou 'boleto')
+   * 'name' => (nome do comprador)
+   * 'cpf' => (CPF do comprador)
+   * 'email' => (E-mail do comprador)
+   * 'amount' => (Valor da compra, enviar sem pontos e vírgulas, ex: '150000')
+   * 'card_user' => (Nome do dono do cartão),
+   * 'card_number' => (Número do cartão, enviar no seguinte formato: '4514 1671 3283 6410')
+   * 'card_expiration_date' => (Data de validade mm/aaaa, ex: '12/2018')
+   * 'card_cvv' => (Senha do cartão)
 
 Documentação API (Receber dados de pagamento):
 - Url: http://localhost:8000/api/get
 - Método: GET
 - Campos para envio:
-	 client_id = (hash/ID do cliente que está utilizando a API, ex: '348298791817d5088a6de6'),
-	 id = (ID do pedido feito pelo comprador)   
+   * client_id = (hash/ID do cliente que está utilizando a API, ex: '348298791817d5088a6de6')
+   * id = (ID do pedido feito pelo comprador)   
