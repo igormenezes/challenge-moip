@@ -4,21 +4,25 @@ PHP | MySQL | Laravel - API para receber dados de um pagamento
 
 composer install
 
-2 - (IMPORTANTE!!) Criar o arquivo .env (na raiz) ou configurar o arquivo /config/database.php com os dados do seu banco de dados local, para poder rodar o projeto.
+2 - (IMPORTANTE!!) Criar o arquivo .env (na raiz, pode copiar do .env.testing, e apenas alterar as informações de banco) ou configurar o arquivo /config/database.php com os dados do seu banco de dados local, para poder rodar o projeto.
 
-3 - Editar o arquivo .env.testing com os dados do banco de dados de teste, para poder rodar os testes automatizados.
+3 - Execute o comando no terminal, para gerar uma chave para o arquivo .env:
 
-4 - Rodar as migrations para os dois ambientes:
+php artisan key:generate
+
+4 - Editar o arquivo .env.testing com os dados do banco de dados de teste, para poder rodar os testes automatizados.
+
+5 - Rodar as migrations para os dois ambientes:
 
 php artisan migrate
 
 php artisan migrate --env=testing
 
-5 - Rodar a aplicação:
+6 - Rodar a aplicação:
 
 php artisan serve
 
-6 - Acessar:
+7 - Acessar:
 
 http://localhost:8000/
 
